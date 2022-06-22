@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class StaticInitializerBlock {
 	
 
-	//static int b = new Random().nextInt(100);
-	//static int h = new Random().nextInt(100);
 	
 
 	public static void main(String[] args) {

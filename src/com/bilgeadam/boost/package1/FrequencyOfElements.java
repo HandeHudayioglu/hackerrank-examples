@@ -6,7 +6,7 @@ public class FrequencyOfElements {
 
 	public static void main(String[] args) {
 		
-		int [] list = {10,30,20,10,10,30,20,20,20,40}; //aşağıda sadece birer defa yazdırmak istiyorum
+		int [] list = {10,30,20,10,10,30,20,20,20,40}; 
 		
 		Arrays.sort(list);
 		for(int i=0; i<list.length-1; i++) {

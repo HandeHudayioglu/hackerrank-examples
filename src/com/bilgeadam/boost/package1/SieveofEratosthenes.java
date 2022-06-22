@@ -24,7 +24,7 @@ public class SieveofEratosthenes {
 		list[0] =false;
 		list[1] =false;
 		
-		for(int i=0; i<input; i++) {
+		for(int i=2; i<input; i++) {
 			if(list[i]==true)
 			for(int j=0; i*j<input; j++)
 				list[i*j]=false;
