@@ -12,27 +12,41 @@ public class Gloves {
 		
 		
 		String [] gloves = {"red","blue","red","blue","blue","purple"};
-		int sameColor=0;
+		Arrays.sort(gloves);
+		System.out.println(Arrays.toString(gloves));
 		
 		
-		for(int i=0; i<gloves.length; i++) {
-			for(int j=i+1; j<gloves.length;j++) {
-				if((gloves[i].equalsIgnoreCase(gloves[j]))) {
-					
-					sameColor++;
+		for(int i=0; i<gloves.length-1; i++) {
+			int count =0;
+			for(int j=0; j<gloves.length-1; j++) {
+				if(gloves[i]==gloves[j]) {
+					count++;
 					
 				}
 			}
+		
+			if(gloves[i]!=gloves[i+1])
+				
+				System.out.println("Number of element "+gloves[i]+": " +count);
+				
+		
+//		for(int i=0; i<gloves.length; i++) {
+//			for(int j=i+1; j<gloves.length;j++) {
+//				if((gloves[i].equalsIgnoreCase(gloves[j]))) {
+//				
+//					sameColor++;
+//					
+//				}
+//			}
+//		}		System.out.println(sameColor);
+	
 		}
-		System.out.println(sameColor++);
 		
+		
+	
+	
 		}
-		
-		
-		
-		
-		
-	}
+}
 	
 	
 	 
